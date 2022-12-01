@@ -1,27 +1,9 @@
-.content {
-    width: 300px;
+.predict--section {
+    width: 850px;
     margin: 0 auto;
     text-align: center;
 }
 
-.head_section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    height: 60px;
-    background-color: rgb(139, 154, 161);
-    padding-left: 38px;
-    padding-right: 38px;
-    border-radius: 15px;
-}
-
-h1 {
-    padding: 0;
-    margin: 0;
-    color: rgb(216, 216, 216);
-    font-family: Roboto, sans-serif;
-}
-
-h2, p {
-    font-family: Roboto, sans-serif;
+.predict--text {
+    color: green;
 }
