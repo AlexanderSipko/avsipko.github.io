@@ -1,9 +1,28 @@
-.predict--section {
-    width: 850px;
-    margin: 0 auto;
-    text-align: center;
+
+h1, h2, .predict--date, p {
+    width: 100%;
+    text-align: justify;
+    margin-left: 38px;
+    margin-right: 38px;
+    font-family: sans-serif;
+    max-width: 600px;
+}
+
+.input--div {
+    margin-left: 38px;
 }
 
 .predict--text {
     color: green;
 }
+
+
+@media screen and (max-width: 480px) {
+    html {
+       -webkit-text-size-adjust: none;
+    }
+
+    h1, h2, .predict--date, p {
+        max-width: 350px;
+    }
+ }
