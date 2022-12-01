@@ -29,8 +29,6 @@
             let text = document.querySelector('#date--1').value
             let number = getYourNumber(text)
             let state = predict_number[number]
-            console.log(document.querySelector('.predict--text'))
-            console.log(state)
             document.querySelector('.predict--text').textContent = state
             document.querySelector('.predict--date').textContent =  `Вы указали дату рождения: ${text}`
             document.querySelector('.predict--number').textContent =  `Ваша цифра: ${number}`
