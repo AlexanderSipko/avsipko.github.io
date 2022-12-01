@@ -18,7 +18,8 @@
                 return [...num].map( item => {return (item*1 > 0)? item*1: 0 }).reduce( (add, a) => add + a);
             }
             let number = get_sum(props);
-            if (number > 9) {
+
+            while (number > 9) {
                 number = get_sum(number.toString())
             }
             return number;
