@@ -13,7 +13,10 @@ h1, h2, .predict--date, p {
 }
 
 .predict--text {
-    color: green;
+    background-color: #0080ff;
+    color: #ffffff;
+    border-radius: 15px;
+    padding: 15px;
 }
 
 #clock {
@@ -21,6 +24,46 @@ h1, h2, .predict--date, p {
     font-size: 40px;
 }
 
+input[type="date"]::before { 
+    content: attr(data-placeholder);
+    width: 100%;
+}
+input[type="date"]:focus::before,
+input[type="date"]:valid::before { display: none }
+
+input[type="date"]{
+    background-color: #0080ff;
+    color: #ffffff;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    height: 35px;
+    width: 200px;
+}
+::-webkit-calendar-picker-indicator{
+    background-color: #ffffff;
+    padding: 5px;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+button {
+    background-color: #f5a356;
+    color: #3b3b3b;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    padding: 5px;
+    height: 45px;
+    width: 80px;
+}
 
 @media screen and (max-width: 480px) {
     html {

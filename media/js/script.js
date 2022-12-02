@@ -30,7 +30,10 @@
             let text = document.querySelector('#date--1').value
             let number = getYourNumber(text)
             let state = predict_number[number]
-            document.querySelector('.predict--text').textContent = state
+            let answer = document.querySelector('.answer')
+            answer.textContent = state
+            answer.classList.add('predict--text');
+
             document.querySelector('.predict--date').textContent =  `Вы указали дату рождения: ${text}`
             document.querySelector('.predict--number').textContent =  `Ваша цифра: ${number}`
           }
