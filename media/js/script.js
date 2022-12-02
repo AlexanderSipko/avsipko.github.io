@@ -47,7 +47,7 @@ function update_clock() {
 
     if (houres < 10 ) houres = '0' + houres;
     if (minutes < 10 ) minutes = '0' + minutes;
-    if (secods < 10 ) secods = '0' + minutes;
+    if (secods < 10 ) secods = '0' + secods;
     document.querySelector('#clock').textContent =  `${houres}:${minutes}:${secods}`
 }
 // update time every second
