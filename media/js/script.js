@@ -34,3 +34,23 @@
             document.querySelector('.predict--date').textContent =  `Вы указали дату рождения: ${text}`
             document.querySelector('.predict--number').textContent =  `Ваша цифра: ${number}`
           }
+
+
+
+// часы
+
+function update_clock() {
+    let date = new Date();
+    let houres = date.getHours();
+    let minutes = date.getMinutes();
+    let secods = date.getSeconds();
+
+    if (houres < 10 ) houres = '0' + houres;
+    if (minutes < 10 ) minutes = '0' + minutes;
+    if (secods < 10 ) secods = '0' + minutes;
+    document.querySelector('#clock').textContent =  `${houres}:${minutes}:${secods}`
+}
+// update time every second
+setInterval(update_clock, 1000)
+
+//

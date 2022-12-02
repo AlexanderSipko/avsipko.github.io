@@ -16,6 +16,11 @@ h1, h2, .predict--date, p {
     color: green;
 }
 
+#clock {
+    font-weight: bold;
+    font-size: 40px;
+}
+
 
 @media screen and (max-width: 480px) {
     html {
