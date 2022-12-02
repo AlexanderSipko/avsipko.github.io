@@ -9,6 +9,16 @@ h1, .predict--date, #clock {
     max-width: 600px;
 }
 
+#clock {
+    background: linear-gradient(to left, #7dc4b2, #fcd678 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: white;
+    width: 300px;
+    border-radius: 5px;
+    padding: 8px;
+}
+
 .predict--date {
     background: linear-gradient(to left, #9ef6e0, #f9dd94 100%);
     width: 300px;
@@ -26,8 +36,8 @@ h1, .predict--date, #clock {
 }
 
 .predict--text {
-    background-color: #0080ff;
-    color: #ffffff;
+    background: linear-gradient(to left, #9ef6e0, #f9dd94 100%);
+    color: #014c97;
     border-radius: 15px;
     padding: 10px;
     font-family: sans-serif;
@@ -51,8 +61,8 @@ input[type="date"]:focus::before,
 input[type="date"]:valid::before { display: none }
 
 input[type="date"]{
-    background-color: #0080ff;
-    color: #ffffff;
+    background-color: #a4f5dd;
+    color: #004c97;
     font-family: sans-serif;
     font-weight: bold;
     font-size: 18px;
@@ -83,7 +93,7 @@ input[type="date"]{
 
 
 button {
-    background-color: #f5a356;
+    background-color: #f7de96;
     color: #3b3b3b;
     font-family: sans-serif;
     font-weight: bold;
