@@ -76,13 +76,3 @@ button {
     width: 80px;
     margin-left: 5px;
 }
-
-@media screen and (max-width: 480px) {
-    html {
-       -webkit-text-size-adjust: none;
-    }
-
-    h1, .predict--date, p {
-        max-width: 350px;
-    }
- }
