@@ -60,3 +60,34 @@ function update_clock() {
 setInterval(update_clock, 1000)
 
 //
+
+
+// случайное значение Да или Нет
+function getYesOrNo() {
+    return (Math.random( ) > 0.5)? 1:0 
+}
+
+
+function renderYesOrNo() {
+    let answer = getYesOrNo()
+    let count_push = YesOrNo.dataset.number
+    let yes = count_push.split('//')[0]
+    let no = count_push.split('//')[1]
+
+    if (answer === 1) {
+        answer = 'Да!'
+        yes = yes*1 + 1
+    } else {
+        answer = 'Нет!'
+        no = no*1 + 1
+    }
+    YesOrNo.dataset.number = `${yes}//${no}`
+    answer = `${answer}`
+    
+    YesOrNo.innerHTML = `${answer}`
+   
+    !(YesOrNo.classList.contains('predict--date')) ? YesOrNo.classList.add('predict--date'):PaymentResponse;
+
+    let butYesOrNo = document.querySelector('.renderYesOrNo')
+    butYesOrNo.textContent = `Да-${yes} / Нет-${no}`
+}

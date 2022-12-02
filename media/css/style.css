@@ -9,6 +9,14 @@ h1, .predict--date, #clock {
     max-width: 600px;
 }
 
+.predict--date {
+    background: linear-gradient(to left, #9ef6e0, #f9dd94 100%);
+    width: 300px;
+    border-radius: 5px;
+    padding: 8px;
+}
+
+
 .div--input {
     margin-left: 38px;
     display: flex;
@@ -61,6 +69,18 @@ input[type="date"]{
     cursor: pointer;
     border-radius: 3px;
 }
+
+.renderYesOrNo {
+    width: 250px;
+    margin-left: 38px;
+    margin-top: 5px;
+}
+
+.renderYesOrNo:active {
+    background-color: #c88546;
+}
+
+
 
 button {
     background-color: #f5a356;
