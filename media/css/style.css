@@ -24,7 +24,7 @@ h1, .predict--date, #clock {
     padding: 10px;
     font-family: sans-serif;
     font-weight: bold;
-    width: 400px;
+    width: 300px;
     margin-left: 38px;
     margin-top: 5px;
 
@@ -52,7 +52,7 @@ input[type="date"]{
     outline: none;
     border-radius: 5px;
     padding: 5px;
-    height: 35px;
+    height: 45px;
     width: 200px;
 }
 ::-webkit-calendar-picker-indicator{
