@@ -1,6 +1,7 @@
 
-h1, h2, .predict--date, p {
+h1, .predict--date, #clock {
     width: 100%;
+    color: #014c97;
     text-align: justify;
     margin-left: 38px;
     margin-right: 38px;
@@ -8,15 +9,25 @@ h1, h2, .predict--date, p {
     max-width: 600px;
 }
 
-.input--div {
+.div--input {
     margin-left: 38px;
+    display: flex;
+    align-content: center;
+    align-items: center;
+    justify-content: flex-start;
 }
 
 .predict--text {
     background-color: #0080ff;
     color: #ffffff;
     border-radius: 15px;
-    padding: 15px;
+    padding: 10px;
+    font-family: sans-serif;
+    font-weight: bold;
+    width: 400px;
+    margin-left: 38px;
+    margin-top: 5px;
+
 }
 
 #clock {
@@ -63,6 +74,7 @@ button {
     padding: 5px;
     height: 45px;
     width: 80px;
+    margin-left: 5px;
 }
 
 @media screen and (max-width: 480px) {
@@ -70,7 +82,7 @@ button {
        -webkit-text-size-adjust: none;
     }
 
-    h1, h2, .predict--date, p {
+    h1, .predict--date, p {
         max-width: 350px;
     }
  }
