@@ -114,4 +114,5 @@ button {
     height: 45px;
     width: 80px;
     margin-left: 5px;
+    box-shadow: 2px 3px 3px 1px rgba(0, 0, 0, 0.2);
 }
