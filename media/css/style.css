@@ -86,7 +86,7 @@ input[type="date"]{
     border-radius: 3px;
 }
 
-.renderYesOrNo, .render--tost {
+.renderYesOrNo, .render--tost, .render--omar {
     width: 250px;
     margin-left: 38px;
     margin-top: 5px;
@@ -97,6 +97,10 @@ input[type="date"]{
 }
 
 .render--tost:active {
+    background-color: #c88546;
+}
+
+.render--omar:active {
     background-color: #c88546;
 }
 
