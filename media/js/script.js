@@ -106,8 +106,6 @@ function renderYesOrNo() {
     butYesOrNo.textContent = `Да-${yes} / Нет-${no}`
 }
 
-
-
 // рандомный тост
 function renderTost() {
     let renderT = document.querySelector("#id--RenderTost")
@@ -128,7 +126,7 @@ function renderOmar() {
         localStorage.setItem('test', JSON.stringify(omar_h));
     }
 
-    // читаем массив и получаем случайную фразу после этого удалаем ее из локальной переменной
+    // читаем массив и получаем случайную фразу после этого удаляем ее из локальной переменной
     var omarH = JSON.parse(localStorage.test)
     var rand = Math.random()*omarH.length | 0;
     var rValue = omarH[rand];
@@ -138,7 +136,33 @@ function renderOmar() {
     let renderO = document.querySelector("#id--RenderOmar")
     !(renderO.classList.contains("predict--date")) ? renderO.classList.add("predict--date"):PaymentResponse;
     renderO.innerHTML = rValue
-}  
+}
+
+function renderMenu() {
+    let renderO = document.querySelector("#Menu")
+
+    renderO.innerHTML = `<p>Ориентир на первую неделю</p>
+    <ul>
+        <li>Вода: 
+            <ul>
+                <li>min 2 литра в день</li>
+            </ul>
+        </li>
+        <li>Завтрак: 
+            <ul>
+                <li>каша (овсяная) - 30 гр. в сухом виде на воде</li>
+                <li>одно яйцо, без жарки</li>
+            </ul>
+        </li>
+        <li>Обед: 
+            <ul>
+                <li>мясо не жирное - 100 гр</li>
+                <li>каша, макароны - 60 гр</li>
+            </ul>
+        </li>
+    </ul>
+    `
+}
 
 document.addEventListener("DOMContentLoaded", function(){
     localStorage.removeItem('test')

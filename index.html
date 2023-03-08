@@ -11,6 +11,10 @@
 
     <section class='predict--section'>
         <div id="clock"></div>
+        <h1 class='predict--date'>0. Рацион питания</h1>
+        <button class="renderMenu" onclick="renderMenu()">Узнай свой рацион</button>
+        <h1 id="Menu" data-menu=""></h1>
+        
         <h1 class='predict--date'>1. Узнай свой характер</h1>
         <div class="div--input">
             <input id='date--1' type="date" data-placeholder="Дата рождения" required aria-required="true" ></input>
@@ -29,10 +33,10 @@
         <h1 class='predict--date'>4. Аналог орла и решки</h1>
         <button class="renderYesOrNo" onclick="renderYesOrNo()">Да или Нет</button>
         <h1 id="YesOrNo" data-number="0//0"></h1>
-    </section>
 
         
+    </section>
+        
 </body>
-
     <script src="./media/js/script.js"></script>
 </html>

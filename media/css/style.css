@@ -86,7 +86,7 @@ input[type="date"]{
     border-radius: 3px;
 }
 
-.renderYesOrNo, .render--tost, .render--omar {
+.renderYesOrNo, .render--tost, .render--omar, .renderMenu {
     width: 250px;
     margin-left: 38px;
     margin-top: 5px;
